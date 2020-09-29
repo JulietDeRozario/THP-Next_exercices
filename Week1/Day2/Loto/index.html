@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Loto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="position:fixed; top:50%; left: 50%; transform: translate(-50%, -50%);">
+  <div id="alert"></div>
+  <h2 class="text-center">Loto</h2>
+  <hr>
+  <form>
+    <div class="form-group">
+      <label for="InputFirstName">Prénom</label>
+      <input type="text" class="form-control" id="first_name" placeholder="Entrez votre prénom">
+    </div>
+    <div class="form-group">
+      <label for="InputLastName">Nom</label>
+      <input type="text" class="form-control" id="last_name" placeholder="Entrez votre nom de famille">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Adresse Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrez votre email">
+      <small id="emailHelp" class="form-text text-muted">Cette adresse nous servira uniquement à vous recontacter en cas de gain.</small>
+    </div>
+    <hr>
+    <h5>Veuillez rentrez vos numéros, il doivent impérativement être compris entre 1 et 100: </h5>
+    <br>
+    <div class="form-row align-items-center">
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Premier chiffre</label>
+          <input type="number" class="form-control" id="first_number" placeholder="nombre">
+        </div>
+      </div>
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Deuxième chiffre</label>
+          <input type="number" class="form-control" id="second_number" placeholder="nombre">
+        </div>
+      </div>
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Troisième chiffre</label>
+          <input type="number" class="form-control" id="third_number" placeholder="nombre">
+        </div>
+      </div>
+    </div>
+    <div class="form-row align-items-center">
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Quatrième chiffre</label>
+          <input type="number" class="form-control" id="forth_number" placeholder="nombre">
+        </div>
+      </div>
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Cinquième chiffre</label>
+          <input type="number" class="form-control" id="fifth_number" placeholder="nombre">
+        </div>
+      </div>
+      <div class= "col-sm-4">
+        <div class="form-group">
+          <label for="InputLastName">Sixième chiffre</label>
+          <input type="number" class="form-control" id="sixth_number" placeholder="nombre">
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="button" id="submit" class="btn btn-block btn-primary">Jouer</button>
+  </form>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
