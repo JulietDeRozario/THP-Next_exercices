@@ -9,7 +9,8 @@ edit.addEventListener('click', editPlayer);
 	
 function editPlayer() {
   document.querySelector('#form').style.visibility = "visible";
-  submit.onclick = () => {
+  submit.onclick = (e) => {
+    e.preventDefault()
     // I put all the form values in a hash table
     stats = Array.from(document.querySelectorAll('form input')).reduce((acc, input) => ({...acc, [input.id]: input.value}), {});
     let values = Object.values(stats);
