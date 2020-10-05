@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<article>
+		<div id="cursor"></div>
+		<article style="visibility: hidden;">
 				<h1>My character : <span id="name"></span></h1>
 				<h2>Class : <span id="race"></span></h1>
 
@@ -26,7 +27,7 @@
 			<li>Afficher les stats : <code>game.watchStats();</code></li>
 		</ul>
 
-		<div id="form">
+		<div id="form" style="visibility: hidden;">
 			<hr>
 			<div id="alert"></div>
 			<h2 class="text-center">Editer un héros</h2>
@@ -62,6 +63,7 @@
 			</form>
 	</div>
 	</body>
+	<script src="cursor.js"></script>
 	<script src="utils.js"></script>
 	<script src="dom.js"></script>
 	<script src="./classes/Character.js"></script>
