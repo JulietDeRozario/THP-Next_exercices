@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Mini RPG</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<article>
+				<h1>My character : <span id="name"></span></h1>
+				<h2>Class : <span id="race"></span></h1>
+
+				<p>Lifepoints : <span class="hp"></span>HP</p>
+				<p class="mana">Mana : <span></span>mana</p>
+				<p>Damages : <b></b>dmg</p>
+				<button id="edit">Editer</button>
+		</article>
+		
+		<br> <hr>
+		<h1>Mini RPG</h1>
+		<p>Ça se passe dans la console (<code>CTRL + Maj + I</code>) ! ➡️</p>
+		<ul>
+			<li>Attaque normale : <code>game.currentPlayerAttacks(victim);</code></li>
+			<li>Attaque spéciale : <code>game.currentPlayerAttacks(victim, true)</code></li>
+			<li>Afficher les stats : <code>game.watchStats();</code></li>
+		</ul>
+
+		<div id="form">
+			<hr>
+			<div id="alert"></div>
+			<h2 class="text-center">Editer un héros</h2>
+			<form>
+					<div class="form-group">
+							<label for="InputFirstName">Nom</label>
+							<input type="text" class="form-control" id="name" placeholder="Entrez le nom de votre héros">
+							</div>
+							<h5>Stats: </h5>
+							<div class="form-row align-items-center">
+							<div class="col-sm-4">
+									<div class="form-group">
+									<label for="InputLastName">Points de vie</label>
+									<input type="number" class="form-control" id="hp" placeholder="nombre">
+									</div>
+							</div>
+							<div class="col-sm-4">
+									<div class="form-group">
+									<label for="InputLastName">Points d'attaque</label>
+									<input type="number" class="form-control" id="dmg" placeholder="nombre">
+									</div>
+							</div>
+							<div class="col-sm-4">
+									<div class="form-group">
+									<label for="InputLastName">Points de mana</label>
+									<input type="number" class="form-control" id="mana" placeholder="nombre">
+									</div>
+							</div>
+							</div>
+							<br>
+							<button type="button" id="submit" class="btn btn-block btn-primary">Sauvegarder les changements</button>
+					</div>
+			</form>
+	</div>
+	</body>
+	<script src="utils.js"></script>
+	<script src="dom.js"></script>
+	<script src="./classes/Character.js"></script>
+	<script src="./classes/Assassin.js"></script>
+	<script src="./classes/Berserker.js"></script>
+	<script src="./classes/Fighter.js"></script>
+	<script src="./classes/Monk.js"></script>
+	<script src="./classes/Paladin.js"></script>
+	<script src="./classes/Game.js"></script>
+	<script src="index.js"></script>
+</html>

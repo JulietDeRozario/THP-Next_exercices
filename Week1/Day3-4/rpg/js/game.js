@@ -74,7 +74,6 @@ class Game {
         alert.className="";
         alert.innerHTML=""
       }
-    this.createPlayer();
   }
 
   startTurn = () => {
