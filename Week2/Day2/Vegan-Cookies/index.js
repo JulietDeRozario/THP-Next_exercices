@@ -13,14 +13,14 @@ Recipe.prototype.cook = function() {
     if(step[step.length - 1] === "dry"){
       instructions += `<br>-Add ${step[0]} ${step[1]} of ${step[2]} to the bowl;`;
     }else if(step[step.length - 1] === "wet"){
-      instructions += `<br>-For ${step[0]} ${step[1]} of Z ${step[2]} to the bowl;`;
+      instructions += `<br>-For ${step[0]} ${step[1]} of ${step[2]} to the bowl;`;
     }
     if(step === this.steps[this.steps.length - 2]){
       instructions += "<br>" + step ;
 
     }
     if(step === this.steps[this.steps.length - 1]){
-      instructions += `Then, heat ${step[0]} minutes in the oven at ${step[1]} degrees.`;
+      instructions += `<br>Then, heat ${step[0]} minutes in the oven at ${step[1]} degrees.`;
     }
   })
   document.getElementById("instructions").innerHTML = instructions
