@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>coucou</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form>
+      <h3 class="text-center">Veuillez remplir tous les champs</h3><br>
+      <div class="form-group">
+        <label for="firstName">Prénom</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Jean">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Nom</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Dujardin">
+      </div>
+      <div class="form-group">
+        <label for="age">Âge</label>
+        <input type="number" class="form-control" id="age" placeholder="18">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="mot de passe">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="emailConfirmation">Confirmation de l'email</label>
+          <input type="email" class="form-control" id="emailConfirmation" placeholder="email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="passwordConfirmation">Confirmation du mot de passe</label>
+          <input type="password" class="form-control" id="passwordConfirmation" placeholder="mot de passe">
+        </div>
+      </div>
+      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="checkBox">
+        <label class="custom-control-label" for="checkBox">J'accèpte les CGU</label>
+      </div><br>
+      <button type="submit" id="submit" class="btn btn-primary btn-block">Envoyer</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
+
