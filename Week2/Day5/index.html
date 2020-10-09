@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EasyQuizzy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="card play-form">
+      <div class="card-body">
+        <h3 class="text-center">EasyQuizzy</h3>
+        <h4 class="text-center mb-4">Les quizzs garants du fun !</h4>
+        <form>
+          <div class="form-group">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" class="form-control" id="pseudo" placeholder="Entrez votre pseudo">
+            <small class="form-text text-muted">Il servira à classer les performances de nos joueurs!</small>
+          </div>
+          <h6 class="text-center text-muted">Je veux répondre à ...</h6>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option value="1">1 question</option>
+            <option value="2">2 questions</option>
+            <option value="3">3 questions</option>
+            <option value="4">4 questions</option>
+            <option value="5">5 questions</option>
+            <option value="6">6 questions</option>
+            <option value="7">7 questions</option>
+            <option value="8">8 questions</option>
+            <option value="9">9 questions</option>
+            <option value="10">10 questions</option>
+          </select>
+          <div class="col-auto my-1 mt-3">
+            <button type="submit" onclick="setQuestions(event)" class="btn btn-primary btn-block">Jouer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card question-card"><div class="card-body"></div></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
