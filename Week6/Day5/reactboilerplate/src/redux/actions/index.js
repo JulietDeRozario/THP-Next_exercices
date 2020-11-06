@@ -15,7 +15,7 @@ export const actionWithProps = (props) => {
 
 ==== TO CALL THEM IN ANOTHER COMPONENT ====
 import {useDispatch} from 'react-redux';
-import { action, actionWithProps } from '../actions';
+import { action, actionWithProps } from '../redux/actions';
 
 const dispatch = useDispatch();
 dispatch(action());
