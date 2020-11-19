@@ -63,13 +63,6 @@ const ProfileInfos = ({data}) => {
 
     return (
         <div id='profile-informations'>
-            < UploadPictureModal 
-                setMentions = {updateMentions}
-                setHashtags = {updateHashtags}
-                setDescription = {editDescription}
-                uploadModal = {uploadModal}
-                setUploadModal = {() => setUploadModal(false)}
-            />
             < EditProfileModal 
                 updateProfile = {updateProfile}
                 setEmail = {editEmail}
@@ -82,6 +75,17 @@ const ProfileInfos = ({data}) => {
                 phoneNumber = {phoneNumber}
                 editProfilModal = {editProfilModal}
                 setEditProfilModal = {() => setEditProfilModal(false)}
+            />
+
+            < UploadPictureModal 
+                setMentions = {updateMentions}
+                setHashtags = {updateHashtags}
+                setDescription = {editDescription}
+                visibility = {uploadModal}
+                setUploadModal = {() => setUploadModal(false)}
+                description = {description}
+                hashtags = {hashtags}
+                mentions = {mentions}
             />
             
             <Row type="flex" align="middle" justify="center">

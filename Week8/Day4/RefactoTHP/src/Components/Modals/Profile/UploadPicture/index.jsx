@@ -2,16 +2,15 @@ import React from 'react';
 import MentionsTagsComponent from '../../../../MentionsTagsComponent';
 import { Col, Row, Modal, Input} from 'antd/es';
 
-
-const UploadPicture = (description, hashtags, mentions, setDescription, setHashtags, setMentions, uploadModal, setUploadModal) => {
+const UploadPicture = (setMentions, setHashtags, setDescription, visibility, setUploadModal, description, hashtags, mentions) => {
 
     const uploadPicture = () => {
         alert("J'upload une image avec la description : " + description + " et les hashtags " + hashtags + " et les mentions " + mentions);
     }
-    console.log(uploadModal)
+    console.log(visibility);
 
     return (
-        <Modal title="Upload a picture" okText="Upload" visible={uploadModal} onOk={() => uploadPicture()} onCancel={() => setUploadModal()}>
+        <Modal title="Upload a picture" okText="Upload" visible={visibility} onOk={() => uploadPicture()} onCancel={() => setUploadModal()}>
             <Row type="flex" justify="center" className="input-container">
                 <Col span={20}>
                     <b>Description:</b>
